@@ -59,7 +59,7 @@ const getNoteByIdHandler = (request, h) => {
         id
     } = request.params;
 
-    const note = notes.filter((n) => note.id === id)[0];
+    const note = notes.filter((note) => note.id === id)[0];
 
     if (note !== undefined) {
         return {
